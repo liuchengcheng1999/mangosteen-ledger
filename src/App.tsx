@@ -1,19 +1,24 @@
-import { defineComponent, Fragment, ref} from "vue";
+import { defineComponent } from "vue";
+import { RouterView } from "vue-router";
 
 export const App = defineComponent({
   setup() {
-      const refCount = ref(0)
-      const onClick = () => {
-        refCount.value += 1
-      }
-      return () => <Fragment>
+    return () => <>
+      <header>导航
+        <ul>
+          <li>
+            <router-link to="/">Foo</router-link>
+          </li>
+          <li>
+            <router-link to="/about">Bar</router-link>
+          </li>
+        </ul> 
+      </header>
       <div>
-        {refCount.value}
+        <RouterView />
       </div>
-      <div>
-        <button onClick={onClick}>+1</button>
-      </div>
-    </Fragment>
+      <footer>页脚</footer>
+    </>
+
   }
-  
-});
+})
