@@ -1,11 +1,9 @@
-import { defineComponent } from 'vue';
-import s from './First.module.scss';
+import s from './WelcomeLayout.module.scss';
 import pig from '../../assets/icons/pig.svg';
 import { WelcomeLayout } from './WelcomeLayout';
 import { RouterLink } from 'vue-router';
-export const First = defineComponent({
-  setup: (props, context) => {
-    return () => (
+export const First = () => {
+    return (
       <WelcomeLayout>
         {{
           icon: ()=> <img src={pig} />,
@@ -18,5 +16,4 @@ export const First = defineComponent({
         }}
       </WelcomeLayout>
     )
-  }
-})
+}
