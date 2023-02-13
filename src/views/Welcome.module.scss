@@ -1,5 +1,5 @@
 .wrapper {
-  height: calc(108vh - var(--welcome-nav-height));
+  height: calc(100vh - var(--welcome-nav-height));
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(to bottom, var(--welcome-bg-start) 0%, var(--welcome-bg-end) 100%);
@@ -12,6 +12,10 @@
     align-items: center;
     padding-top: 66px;
     color: #D4D4EE;
+    > svg {
+      width: 64px;
+      height: 69px;
+    }
   }
   > main {
     flex-grow: 1;
