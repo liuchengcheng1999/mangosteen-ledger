@@ -6,7 +6,9 @@ export const First = defineComponent({
   setup(){
     const div = ref<HTMLDivElement>()
     const router = useRouter()
-    const {swiping, direction} = useSwipe(div)
+    const {swiping, direction} = useSwipe(div, {
+      beforeStart: e => e.preventDefault()
+    })
     watchEffect(() => { 
       if (swiping.value && direction.value === 'left') {
         router.push('/welcome/2')
