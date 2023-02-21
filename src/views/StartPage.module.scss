@@ -9,6 +9,13 @@
     width: 128px;
     height: 128px;
     &_wrapper {
-        padding: 160px 0px;
+        padding: 120px 0px;
     }
+}
+
+.navIcon {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 2px;
 }
