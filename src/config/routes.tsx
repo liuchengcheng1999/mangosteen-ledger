@@ -9,7 +9,7 @@ import { Third } from "../components/welcome/Third";
 import { ThirdActions } from "../components/welcome/ThirdActions";
 import { Welcome } from "../views/Welcome";
 import { StartPage } from "../views/StartPage";
-import { ItemPage } from "../shared/ItemPage";
+import { ItemPage } from "../views/ItemPage";
 import { ItemList } from "../components/item/ItemList";
 import { ItemCreate } from "../components/item/ItemCreate";
 
