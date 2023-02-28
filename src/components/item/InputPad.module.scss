@@ -1,0 +1,24 @@
+.wrapper {
+    display: none;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    > button {
+        border: none;
+        border-right: var(--button-border-color);
+        border-bottom: var(--button-border-color);
+        width: 25%;
+        height: 48px;
+        background: transparent;
+        &:nth-child(4n) {
+            border-right: none;
+        }
+        &:nth-child(13),
+        &:nth-child(14),
+        &:nth-child(15),
+        &:nth-child(16){
+            border-bottom: none;
+        }
+    }
+}
