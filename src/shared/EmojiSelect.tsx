@@ -36,6 +36,7 @@ export const EmojiSelect = defineComponent({
         return() => (
             <div class={s.emojiList}>
                     <nav>
+                        {table.map(item => <span>{item[0]}</span>)}
                     </nav>
                     <ol>
                         {emojis}
