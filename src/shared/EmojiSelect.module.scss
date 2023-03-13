@@ -18,7 +18,7 @@
       > span {
         flex-shrink: 0;
         display: inline-block;
-        padding: 8px;
+        padding: 1px 4px;
         color: var(--emoji-nav-text);
         &.selected {
           color: var(--emoji-nav-text-selected);
@@ -42,6 +42,10 @@
         flex-grow: 0;
         width: 10%;
         text-align: center;
+      }
+      &.selectedEmoji{
+        outline: 1px solid var(--button-bg);
+        border-radius: var(--input-radius);
       }
     }
   }
